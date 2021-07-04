@@ -20,7 +20,7 @@
 body{
     font-family:'GothamMedium', Helvetica, Arial;
     font-size:14px;
-    margin: 0;
+    margin: 0px;
 }
 
 /*header*/
@@ -30,6 +30,12 @@ body{
     justify-content:space-between;
     align-items:center;
     height: 50px;  
+    width:100vw;
+    /*efeito do menu flutuando por cima*/
+    position:fixed;
+    left: 0;
+    top: 0;
+    /**/
 }
 
 .header-lp ul,
@@ -84,4 +90,14 @@ body{
 .header-lp .hamburguer div{
     height:2px;
     background-color: var(--header-color);
+}
+
+/*main*/
+
+.main-content{
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+   
 }
