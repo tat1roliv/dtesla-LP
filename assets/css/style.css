@@ -1,0 +1,87 @@
+/* var */
+
+:root{
+    --header-color: #000;
+
+}
+
+/*fonts*/
+
+@font-face {
+    font-family: 'GothamMedium';
+    src: url(../fonts/GothamMedium.otf);
+}
+
+@font-face{
+    font-family: 'GothamBook';
+    src: url(../fonts/GothamBookRegular.otf);
+}
+
+body{
+    font-family:'GothamMedium', Helvetica, Arial;
+    font-size:14px;
+    margin: 0;
+}
+
+/*header*/
+
+.header-lp  {
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    height: 50px;  
+}
+
+.header-lp ul,
+.header-lp li{
+    list-style: none;
+} 
+
+.header-lp .leftside .logo{
+    width: 120px;
+    margin-left: 20px;
+}
+
+.header-lp .middle ul{
+    display: flex;
+}
+
+.header-lp .middle li{
+    margin: 0 10px;
+}
+
+.header-lp .middle a{
+    text-decoration: none;
+    color: var(--header-color);
+    text-transform: uppercase;
+}
+
+.header-lp .rightside ul{
+    display: flex;
+}
+
+.header-lp .rightside li{
+    margin: 0 10px;
+}
+
+.header-lp .rightside a{
+    text-decoration: none;
+    color: var(--header-color);
+    text-transform: uppercase;
+}
+
+/*hamburguer*/
+
+.header-lp .hamburguer{
+    width:18px;
+    height:16px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    cursor: pointer;
+}
+
+.header-lp .hamburguer div{
+    height:2px;
+    background-color: var(--header-color);
+}
