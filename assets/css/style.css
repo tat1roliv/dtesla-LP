@@ -4,6 +4,10 @@
     --header-color: #000;
     --h1-color: #393C41;
     --h2-color: #6E7378;
+    --btn-dark-bg: rgba(23,26,32,0.8);
+    --btn-light-bg: rgba(255,255,255,0.65);
+    --btn-dark: #000;
+    --btn-light: #FFF;
 }
 
 /*fonts*/
@@ -128,4 +132,68 @@ body{
 
 .main-content .info-content h2 a{ 
     color: var(--h1-color);
+}
+
+/*footer*/
+
+.footer-lp{
+    position: fixed;
+    left: 0;
+    bottom: min(10%, 30px) ;
+    right: 0;
+}
+
+.footer-lp .btn-area{
+    display: flex;
+    justify-content: center;
+}
+
+
+.footer-lp .btn-area a{
+    display: block;
+    width: 220px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 15px;
+    border-radius:30px;
+    margin: 0 10px;
+}
+
+.footer-lp .btn-area .btn.dark{
+    background-color: var(--btn-dark-bg);
+    color: var(--btn-light);
+}
+
+.footer-lp .btn-area .btn.light{
+    background-color: var(--btn-light-bg);
+    color: var(--btn-dark);
+}
+
+.footer-lp .arrow-content {
+    display:flex;
+    justify-content:center;
+    margin-top:30px;
+    height: 30px;
+}
+
+/*arrow animation*/
+
+@keyframes arrow-animation-move{
+    0%{
+        margin-top:0px;
+    }
+    50%{
+        margin-top:15px;
+    }
+    100%{
+        margin-top:0px;
+    }
+}
+
+.footer-lp .arrow-content img.arrow-down{
+    height: 15px;
+    animation: 'arrow-animation-move' 2s;
+    animation-iteration-count: infinite;
 }
